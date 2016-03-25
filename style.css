@@ -1,0 +1,31 @@
+/*Create a dynamic that functions as row in the small size and
+colums in the large size.
+*/
+
+.row {
+  display: flex;
+  flex-direction: column;
+  background-color: yellow;
+}
+
+.item {
+  flex: 1;
+}
+
+/*660*/
+
+@media screen and (min-width: 660px){
+  .row {
+    display: flex;
+    flex-direction: row;
+    background-color: blue;
+  }
+
+  .item_1 {
+    flex: 1;
+  }
+  .item_2 {
+    flex: 5;
+    background-color: red;
+  }
+}
